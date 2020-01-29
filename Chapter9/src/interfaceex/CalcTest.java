@@ -18,7 +18,14 @@ public class CalcTest {
 		System.out.println(calc.divide(n1, n2));
 		
 		calc.showInfo();
-//		calc2.showInfo();		// 변수타입 때문에 오류남 -> showInfo는 CompleteCalc에만 제공해서
+//		calc2.showInfo();		// 변수타입 때문에 오류남 -> showInfo는 CompleteCalc에만 제공해서..
+		
+		calc.description();
+		
+		// static 메서드 인터페이스
+		int[] arr = {1,2,3,4,5};
+		int sum = Calc.total(arr);
+		System.out.println(sum);
 	}
 
 }
